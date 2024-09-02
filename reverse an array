@@ -1,0 +1,17 @@
+class Solution{
+public:
+    void reverse(int arr[], int n){
+        int s=0;
+        int e=n-1;
+        while(s<e){
+            swap(arr[s],arr[e]);
+            s=s+1;
+            e=e-1;
+        }
+        
+    }
+};
+
+
+here what we did was we considered the starting and ending of the array.Initializing it with "s" for start and "e" for end. s starts from 0 while n starts from n-1.
+we need to make sure s<e using a while loop otherwise the loop will go indefinitely.Using the swap function in cpp we swap s and e,increment s along with decrementing e.
